@@ -22,7 +22,7 @@ const RankItems = () => {
     return (
         <main> <h3>fix map plz</h3>
             {
-                (items != null) ? items.map((item) => <h3>{item.title}</h3>) : <div><h3>Loading...</h3></div>
+                (items != null) ? items.map((item) => <h3> - {item.title}</h3>) : <div><h3>Loading...</h3></div>
             }
         </main>
     )
