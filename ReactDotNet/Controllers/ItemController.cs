@@ -35,6 +35,9 @@ namespace ReactDotNet.Controllers
         public ItemModel[] Get(int itemType)
         {
             ItemModel[] items = Items.Where(i => i.ItemType == itemType).ToArray();
+            
+            //Arbitrary delay to simulate loading
+            Thread.Sleep(2000);
             return items;
         }
     }
